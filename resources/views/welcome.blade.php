@@ -25,8 +25,11 @@
     <body class="antialiased">
         <div class="container mx-auto">
             {{-- Así se invoca el componente después de x- va el
-                nombre de este --}}
-            <x-alert />
+                nombre de este.
+                
+                De esta forma se le envía una variable con el nombre color y el valor
+                que representa el color a la clase del componente--}}
+            <x-alert color="red"/>
         </div>
     </body>
 </html>

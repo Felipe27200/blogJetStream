@@ -11,9 +11,15 @@ class Alert extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    // Propiedad para almacenar un color
+    // Esta propiedad puede ser accedida por el componente
+    public $color;
+    
+    public function __construct($color)
     {
         //
+        $this->color = "red";
     }
 
     /**
