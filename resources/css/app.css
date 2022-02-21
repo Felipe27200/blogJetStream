@@ -1,0 +1,4 @@
+/* Librerías necesarias para que tailwind funcione */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
