@@ -14,12 +14,12 @@ class Alert extends Component
 
     // Propiedad para almacenar un color
     // Esta propiedad puede ser accedida por el componente
-    public $color;
+    public $colorRecibido;
     
-    public function __construct($color)
+    public function __construct($colorRecibido = "red")
     {
         //
-        $this->color = "red";
+        $this->colorRecibido = $colorRecibido;
     }
 
     /**
@@ -31,6 +31,9 @@ class Alert extends Component
     //  Método que se encarga de renderizar el contenido de la vista
     public function render()
     {
-        return view('components.alert');
+        // return view('components.alert', ['color' => $this->color]);
+        $color = $this->colorRecibido;
+
+        return view('components.alert', compact('color'));
     }
 }
