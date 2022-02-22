@@ -26,7 +26,8 @@ class CheckAge
             Así el request ya tiene la propiedad y la puede usar para establecer la validación.
         */
         
-        if ($request->age >= 18)
+        // Se va a verificar si el usuario logeado tiene el siguiente correo
+        if (auth()->user()->email == "jfzea632@misena.edu.co")
         {
             /* Esto permite que la solicitud HTTP continúe sin ninguna 
             validación */
