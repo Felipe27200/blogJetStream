@@ -63,5 +63,9 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        // Se registra el middleware creado
+        // De esta forma se le da un alias al middleware, la clave y 
+        // se le establece la ruta en la que esta.
+        'age' => \App\Http\Middleware\CheckAge::class,
     ];
 }
